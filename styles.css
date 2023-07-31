@@ -205,6 +205,34 @@ section {
     font-size: 18px;
 }
 
+.experience-content, .achievements-content {
+    text-align: center;
+    padding: 50px 0; /* Add some spacing around the content */
+}
+
+.experience-content h2, .achievements-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.experience-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.experience-content p, .achievements-content p {
+    font-size: 18px;
+}
+
+.experience-content ul, .achievements-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-content li, .achievements-content li {
+    margin-bottom: 30px;
+}
+
 
 
 .project-content {
@@ -270,6 +298,30 @@ section {
     margin: 0 auto; /* Center the image horizontally */
     display: block; /* Ensure the image does not affect other elements */
 }
+
+
+
+.achievements-content {
+    text-align: center;
+    padding: 50px 0; /* Add some spacing around the content */
+}
+
+.achievements-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.achievements-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievements-images img {
+    max-width: 400px; /* Adjust the image size as needed */
+    margin: 0 10px; /* Add spacing between images */
+}
+
 
 
 .contact-content {

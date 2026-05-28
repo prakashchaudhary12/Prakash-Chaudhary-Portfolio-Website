@@ -1173,53 +1173,51 @@
 
             <!-- CONTACT FORM -->
 
+        
             <form
                 action="https://formsubmit.co/chyprakash2002@gmail.com"
                 method="POST"
-                class="contact-form">
-
+                class="contact-form"
+                id="contactForm">
+            
                 <!-- Disable Captcha -->
-
                 <input type="hidden"
-                    name="_captcha"
-                    value="false">
-
-                <!-- Email Subject -->
-
+                       name="_captcha"
+                       value="false">
+            
+                <!-- Subject -->
                 <input type="hidden"
-                    name="_subject"
-                    value="New Portfolio Message">
-
-                <!-- Redirect After Submit -->
-
+                       name="_subject"
+                       value="New Portfolio Message">
+            
+                <!-- Redirect -->
                 <input type="hidden"
-                    name="_next"
-                    value="https://prakashchaudharyportfoliowebsite.netlify.app/">
-
+                       name="_next"
+                       value="https://prakashchaudharyportfoliowebsite.netlify.app/">
+            
                 <input type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    required>
-
+                       name="name"
+                       placeholder="Your Name"
+                       required>
+            
                 <input type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    required>
-
+                       name="email"
+                       placeholder="Your Email"
+                       required>
+            
                 <textarea
                     name="message"
                     rows="6"
                     placeholder="Write your message..."
                     required></textarea>
-
-                <button type="submit"
-                        class="btn">
-
+            
+                <button type="submit" class="btn">
                     Send Message
-
                 </button>
-
+            
             </form>
+
+
 
             <!-- SOCIAL LINKS -->
 
@@ -1317,20 +1315,22 @@
 
 
 
+   
     <script>
-
-    window.addEventListener("scroll", function(){
-
-        const header = document.querySelector("header");
-
-        header.classList.toggle(
-            "sticky",
-            window.scrollY > 0
+    
+    const form = document.getElementById("contactForm");
+    
+    form.addEventListener("submit", () => {
+    
+        alert(
+            "✅ Thank you! Your message has been sent successfully."
         );
-
+    
     });
-
+    
     </script>
+
+
 
 
 </body>

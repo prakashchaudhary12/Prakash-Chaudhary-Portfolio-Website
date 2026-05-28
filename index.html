@@ -196,73 +196,288 @@
             margin-bottom:10px;
         }
 
-        /* PROJECTS */
-
+       
         .project-container{
             display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-            gap:30px;
+            grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+            gap:35px;
+        }
+
+        .project-card{
+            background:#1e293b;
+            padding:25px;
+            border-radius:20px;
+            transition:0.4s;
+            box-shadow:0 0 20px rgba(0,0,0,0.3);
+        }
+
+        .project-card:hover{
+            transform:translateY(-12px);
+            box-shadow:0 0 30px rgba(56,189,248,0.4);
         }
 
         .project-card img{
             width:100%;
+            height:240px;
+            object-fit:cover;
             border-radius:15px;
             margin-bottom:20px;
         }
+
+        .project-card h3{
+            color:#38bdf8;
+            margin-bottom:10px;
+        }
+
+        .project-card p{
+            line-height:1.8;
+        }
+
+        .project-card ul{
+            margin-left:20px;
+            line-height:2;
+        }
+
+
+       
+        /* EDUCATION SECTION */
+
+        .education-container{
+
+            display:grid;
+
+            grid-template-columns:
+            repeat(auto-fit,minmax(320px,1fr));
+
+            gap:35px;
+        }
+
+        .education-card{
+
+            background:#1e293b;
+
+            padding:30px;
+
+            border-radius:20px;
+
+            border:1px solid rgba(255,255,255,0.08);
+
+            text-align:center;
+
+            transition:0.4s;
+        }
+
+        .education-card:hover{
+
+            transform:translateY(-10px);
+
+            box-shadow:0 0 25px rgba(56,189,248,0.3);
+        }
+
+        .edu-icon{
+
+            width:80px;
+            height:80px;
+
+            margin:auto;
+            margin-bottom:20px;
+
+            border-radius:50%;
+
+            background:linear-gradient(
+            135deg,
+            #38bdf8,
+            #8b5cf6
+            );
+
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            font-size:35px;
+
+            color:white;
+        }
+
+        .edu-college{
+
+            color:#cbd5e1;
+
+            margin-top:10px;
+        }
+
+        .edu-year{
+
+            color:#94a3b8;
+
+            margin:10px 0;
+        }
+
+        .edu-highlight{
+
+            color:#38bdf8;
+
+            font-weight:500;
+        }
+        
+
+       
 
         /* CERTIFICATIONS */
 
         .certifications{
             display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:25px;
+            grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+            gap:30px;
         }
 
         .certificate{
             background:#1e293b;
-            padding:20px;
+            padding:25px;
             border-radius:20px;
+            transition:0.3s;
             text-align:center;
+            box-shadow:0 0 20px rgba(0,0,0,0.3);
         }
 
-        /* CONTACT */
+        .certificate:hover{
+            transform:translateY(-10px);
+            box-shadow:0 0 25px rgba(56,189,248,0.4);
+        }
+
+        .certificate img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+            border-radius:15px;
+            margin-bottom:20px;
+        }
+
+        .certificate h3{
+            color:#38bdf8;
+            margin-bottom:10px;
+        }
+
+        .certificate p{
+            line-height:1.8;
+        }
+      
+
 
         .contact-container{
-            display:flex;
-            flex-wrap:wrap;
-            gap:40px;
+
+            display:grid;
+
+            grid-template-columns:
+            repeat(auto-fit,minmax(350px,1fr));
+
+            gap:50px;
+
+            align-items:center;
+        }
+
+        .contact-info{
+
+            padding:20px;
+        }
+
+        .contact-info h3{
+
+            font-size:30px;
+
+            color:#38bdf8;
+        }
+
+        .contact-info p{
+
+            line-height:2;
+
+            color:#cbd5e1;
         }
 
         .contact-form{
-            flex:1;
-        }
 
-        .contact-form input,
-        .contact-form textarea{
-            width:100%;
-            padding:15px;
-            margin-bottom:20px;
-            border:none;
-            border-radius:10px;
-            background:#1e293b;
-            color:white;
-        }
+            background:rgba(30,41,59,0.9);
 
-        .contact-form button{
-            border:none;
-            cursor:pointer;
-        }
+            padding:35px;
 
-        .social-icons a{
-            color:white;
-            font-size:28px;
-            margin-right:20px;
-            transition:0.3s;
-        }
+            border-radius:20px;
 
-        .social-icons a:hover{
-            color:#38bdf8;
+            border:1px solid rgba(255,255,255,0.08);
         }
+        
+
+       
+            .social-icons{
+
+                display:flex;
+
+                gap:20px;
+            }
+
+            .social-icons a{
+
+                width:55px;
+                height:55px;
+
+                display:flex;
+                align-items:center;
+                justify-content:center;
+
+                border-radius:50%;
+
+                background:#1e293b;
+
+                color:white;
+
+                font-size:22px;
+
+                transition:0.4s;
+            }
+
+           
+            .contact-form input,
+            .contact-form textarea{
+
+                width:100%;
+
+                padding:15px;
+
+                margin-bottom:20px;
+
+                border:none;
+
+                border-radius:12px;
+
+                background:#0f172a;
+
+                color:white;
+
+                border:1px solid rgba(255,255,255,0.08);
+            }
+
+            .contact-form input:focus,
+            .contact-form textarea:focus{
+
+                outline:none;
+
+                border:1px solid #38bdf8;
+
+                box-shadow:0 0 15px rgba(56,189,248,0.3);
+            }
+
+
+            .social-icons a:hover{
+
+                background:#38bdf8;
+
+                color:black;
+
+                transform:translateY(-8px);
+            }
+
+
+
 
         footer{
             text-align:center;
@@ -287,6 +502,11 @@
 
         }
 
+        header.sticky{
+            background:#020617;
+            box-shadow:0 0 20px rgba(0,0,0,0.3);
+        }
+
     </style>
 </head>
 
@@ -298,15 +518,26 @@
         <div class="logo">Prakash.</div>
 
         <nav>
+
             <a href="#home">Home</a>
+
             <a href="#about">About</a>
+
             <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
+
             <a href="#experience">Experience</a>
+
             <a href="#projects">Projects</a>
-            <a href="#certificates">Certificates</a>
+
+            <a href="#education">Education</a>
+
+            <a href="#certificates">Certifications</a>
+
             <a href="#contact">Contact</a>
+
         </nav>
+
+
     </header>
 
     <!-- HERO SECTION -->
@@ -347,7 +578,8 @@
 
         <div class="about-content">
 
-            <img src="profile-picture.jpeg">
+            <img src="profile-picture.jpeg"
+                alt="Prakash Chaudhary">
 
             <div class="about-text">
 
@@ -374,47 +606,276 @@
 
     </section>
 
+
+
     <!-- SKILLS -->
 
     <section id="skills">
 
-        <h2 class="title">Skills</h2>
+        <h2 class="title">Technical Skills</h2>
 
         <div class="skills-container">
 
             <div class="skill-card">
                 <i class="fab fa-python"></i>
                 <h3>Python</h3>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-database"></i>
-                <h3>SQL</h3>
+                <p>Pandas, NumPy, FastAPI</p>
             </div>
 
             <div class="skill-card">
                 <i class="fas fa-brain"></i>
                 <h3>Machine Learning</h3>
+                <p>Scikit-learn, CatBoost, XGBoost</p>
             </div>
 
             <div class="skill-card">
                 <i class="fas fa-chart-line"></i>
                 <h3>Data Analytics</h3>
+                <p>EDA, ETL, Feature Engineering</p>
             </div>
 
             <div class="skill-card">
-                <i class="fas fa-robot"></i>
-                <h3>Generative AI</h3>
+                <i class="fas fa-database"></i>
+                <h3>SQL & MongoDB</h3>
+                <p>Queries, Aggregation, Data Processing</p>
             </div>
 
             <div class="skill-card">
                 <i class="fas fa-cloud"></i>
-                <h3>Salesforce</h3>
+                <h3>Cloud & MLOps</h3>
+                <p>AWS, Azure, Docker, MLflow</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Power BI</h3>
+                <p>DAX, Dashboards, KPI Reporting</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-github"></i>
+                <h3>Version Control</h3>
+                <p>Git, GitHub, CI/CD</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Backend Development</h3>
+                <p>Flask, FastAPI, REST APIs</p>
             </div>
 
         </div>
 
     </section>
+
+
+
+    <!-- EXPERIENCE -->
+
+    <section id="experience">
+
+        <h2 class="title">Work Experience</h2>
+
+        <div class="experience-card">
+
+            <h3>Associate Data Scientist</h3>
+
+            <p><strong>Wipro Limited</strong></p>
+
+            <p>September 2024 – Present</p>
+
+            <br>
+
+            <p>
+                Working on end-to-end Machine Learning and MLOps solutions
+                for Network Security and predictive analytics applications.
+            </p>
+
+            <br>
+
+            <p><strong>Key Responsibilities:</strong></p>
+
+            <ul>
+
+                <li>
+                    Developed end-to-end Machine Learning pipelines
+                    for phishing detection and anomaly detection systems.
+                </li>
+
+                <li>
+                    Designed modular workflows including
+                    data ingestion, validation, preprocessing,
+                    feature engineering, model training,
+                    and prediction pipelines.
+                </li>
+
+                <li>
+                    Trained and evaluated ML models using
+                    Random Forest, XGBoost, CatBoost,
+                    Logistic Regression, and AdaBoost.
+                </li>
+
+                <li>
+                    Implemented automated data validation,
+                    schema checks, and drift detection workflows.
+                </li>
+
+                <li>
+                    Integrated MLflow and DagsHub for
+                    experiment tracking and model versioning.
+                </li>
+
+                <li>
+                    Developed FastAPI-based REST APIs
+                    for real-time and batch predictions.
+                </li>
+
+                <li>
+                    Containerized and deployed applications
+                    using Docker with AWS and Azure integration.
+                </li>
+
+                <li>
+                    Worked on CI/CD-ready workflows,
+                    logging systems, and scalable ML architecture.
+                </li>
+
+            </ul>
+
+            <br>
+
+            <p><strong>Tech Stack:</strong></p>
+
+            <p>
+                Python, Scikit-learn, FastAPI, Flask,
+                MongoDB, Docker, MLflow,
+                AWS, Azure, GitHub Actions,
+                Pandas, NumPy, SQL
+            </p>
+
+        </div>
+
+    </section>
+
+ 
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2 class="title">Featured Projects</h2>
+
+        <div class="project-container">
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <img src="networksecurity-project.png"
+                    alt="Network Security Project">
+
+                <h3>Network Security Phishing Detection System</h3>
+
+                <br>
+
+                <p>
+                    Developed an end-to-end Machine Learning project
+                    for phishing website detection using Network Security data.
+                </p>
+
+                <br>
+
+                <p><strong>Key Features:</strong></p>
+
+                <ul>
+                    <li>ETL Data Pipeline</li>
+                    <li>Data Validation & Schema Management</li>
+                    <li>ML Model Training & Evaluation</li>
+                    <li>MLflow Experiment Tracking</li>
+                    <li>Docker Integration</li>
+                    <li>CI/CD Pipeline</li>
+                    <li>Phishing Website Detection</li>
+                </ul>
+
+                <br>
+
+                <p><strong>Tech Stack:</strong></p>
+
+                <p>
+                    Python, Machine Learning, MLflow,
+                    MongoDB, Docker, Pandas,
+                    Scikit-learn, Flask, GitHub Actions
+                </p>
+
+                <br>
+
+                <a href="https://github.com/prakashchaudhary12/networksecurity"
+                target="_blank"
+                class="btn">
+
+                View Project
+
+                </a>
+
+            </div>
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <img src="mlproject.png"
+                    alt="Machine Learning Project">
+
+                <h3>End-to-End Machine Learning Project</h3>
+
+                <br>
+
+                <p>
+                    Built a production-ready Machine Learning application
+                    with complete training, deployment,
+                    and cloud integration workflows.
+                </p>
+
+                <br>
+
+                <p><strong>Key Features:</strong></p>
+
+                <ul>
+                    <li>Data Ingestion Pipeline</li>
+                    <li>Data Transformation</li>
+                    <li>Model Training & Evaluation</li>
+                    <li>Hyperparameter Tuning</li>
+                    <li>Azure Deployment</li>
+                    <li>Docker Containerization</li>
+                    <li>Flask Web Application</li>
+                </ul>
+
+                <br>
+
+                <p><strong>Tech Stack:</strong></p>
+
+                <p>
+                    Python, CatBoost, Scikit-learn,
+                    Flask, Docker, Azure,
+                    Pandas, NumPy, Machine Learning
+                </p>
+
+                <br>
+
+                <a href="https://github.com/prakashchaudhary12/mlproject"
+                target="_blank"
+                class="btn">
+
+                View Project
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
 
     <!-- EDUCATION -->
 
@@ -422,144 +883,285 @@
 
         <h2 class="title">Education</h2>
 
-        <div class="education-card">
+        <div class="education-container">
 
-            <h3>Bachelor of Engineering</h3>
+            <!-- BE -->
 
-            <p>Sinhgad College of Engineering, Pune</p>
-            <p>2020 - 2024</p>
-            <p>CGPA: 7.99 / 10.00</p>
+            <div class="education-card">
+
+                <div class="edu-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+
+                <h3>Bachelor of Engineering</h3>
+
+                <p class="edu-college">
+                    Sinhgad College of Engineering, Pune
+                </p>
+
+                <p class="edu-year">
+                    2020 – 2024
+                </p>
+
+                <p>
+                    Electronics & Telecommunication Engineering
+                </p>
+
+                <br>
+
+                <p>
+                    <strong>CGPA:</strong> 8.11 / 10
+                </p>
+
+                <br>
+
+                <p class="edu-highlight">
+                    🏆 Nurturing Brilliance Merit Scholarship
+                    awarded by Cummins for outstanding academic performance.
+                </p>
+
+            </div>
+
+            <!-- CLASS 12 -->
+
+            <div class="education-card">
+
+                <div class="edu-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+
+                <h3>Senior Secondary (Class XII)</h3>
+
+                <p class="edu-college">
+                    J. K. College, Biraul Darbhanga
+                </p>
+
+                <p class="edu-year">
+                    2017 – 2019
+                </p>
+
+                <br>
+
+                <p>
+                    <strong>Percentage:</strong> 77.60%
+                </p>
+
+                <br>
+
+                <p>
+                    Physics, Chemistry & Mathematics
+                </p>
+
+            </div>
+
+            <!-- CLASS 10 -->
+
+            <div class="education-card">
+
+                <div class="edu-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+
+                <h3>Secondary School (Class X)</h3>
+
+                <p class="edu-college">
+                    Onkar High School, Darbhanga
+                </p>
+
+                <p class="edu-year">
+                    2016 – 2017
+                </p>
+
+                <br>
+
+                <p>
+                    <strong>Percentage:</strong> 81%
+                </p>
+
+                <br>
+
+                <p>
+                    Mathematics, Science, Social Science,
+                    Hindi & Maithili
+                </p>
+
+                <br>
+
+                <p class="edu-highlight">
+                    ⭐ Ranked among the top performers
+                    in school board examinations.
+                </p>
+
+            </div>
 
         </div>
 
     </section>
 
-    <!-- EXPERIENCE -->
 
-    <section id="experience">
 
-        <h2 class="title">Experience</h2>
-
-        <div class="experience-card">
-
-            <h3>Project Engineer</h3>
-            <p>Wipro Limited</p>
-            <p>2024 - Present</p>
-
-            <br>
-
-            <p>
-                Working on Salesforce Development,
-                Experience Cloud, Lightning Web Components (LWC),
-                Apex Controllers, and enterprise-level solutions.
-
-                Also involved in analytics workflows,
-                automation, and AI-driven applications.
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- PROJECTS -->
-
-    <section id="projects">
-
-        <h2 class="title">Projects</h2>
-
-        <div class="project-container">
-
-            <div class="project-card">
-
-                <img src="project1.jpg">
-
-                <h3>AI Resume Analyzer</h3>
-
-                <p>
-                    Built an AI-powered resume screening system
-                    using NLP and Machine Learning.
-                </p>
-
-            </div>
-
-            <div class="project-card">
-
-                <img src="project2.jpg">
-
-                <h3>Customer Churn Prediction</h3>
-
-                <p>
-                    Developed a machine learning model
-                    to predict customer churn.
-                </p>
-
-            </div>
-
-            <div class="project-card">
-
-                <img src="project3.jpg">
-
-                <h3>Sales Analytics Dashboard</h3>
-
-                <p>
-                    Created Power BI dashboards for KPI tracking
-                    and business insights.
-                </p>
-
-            </div>
-
-            <div class="project-card">
-
-                <img src="project4.jpg">
-
-                <h3>AI Chatbot Assistant</h3>
-
-                <p>
-                    Developed an AI chatbot using
-                    Generative AI and NLP.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
+    
 
     <!-- CERTIFICATES -->
 
     <section id="certificates">
 
-        <h2 class="title">Certificates</h2>
+        <h2 class="title">Licenses & Certifications</h2>
 
         <div class="certifications">
 
-            <div class="certificate">
-                Microsoft Certified Fundamentals
-            </div>
+            <!-- Microsoft Fabric -->
 
             <div class="certificate">
-                SQL Certification
+
+                <img src="Microsoft_fabric.png" alt="Microsoft Fabric Certification">
+
+                <h3>
+                    Microsoft Certified: Fabric Analytics Engineer Associate
+                </h3>
+
+                <br>
+
+                <p><strong>Issued By:</strong> Microsoft</p>
+
+                <p><strong>Earned:</strong> 11 May 2026</p>
+
+                <p><strong>Expires:</strong> 12 May 2027</p>
+
+                <br>
+
+                <p>
+                    Certified in implementing enterprise-scale
+                    analytics solutions using Microsoft Fabric.
+                </p>
+
+                <br>
+
+                <a href="https://learn.microsoft.com/api/credentials/share/en-in/PrakashKumarchaudhary-3005/2567F45D82931062?sharingId=53A28D6D2F44AE8D"
+                target="_blank"
+                class="btn">
+
+                View Certification
+
+                </a>
+
             </div>
 
-            <div class="certificate">
-                Python Programming
-            </div>
+            <!-- AWS -->
 
             <div class="certificate">
-                Machine Learning
+
+                <img src="Aws_data_engineering.png"
+                    alt="AWS Data Engineering Certification">
+
+                <h3>Data Engineering on AWS - Foundations</h3>
+
+                <br>
+
+                <p><strong>Issued By:</strong> Amazon Web Services (AWS)</p>
+
+                <p><strong>Completed:</strong> April 22, 2026</p>
+
+                <br>
+
+                <p>
+                    Learned foundational concepts of data engineering,
+                    ETL pipelines, cloud analytics, and AWS services.
+                </p>
+
             </div>
 
-            <div class="certificate">
-                Power BI
-            </div>
+            <!-- Microsoft 365 -->
 
             <div class="certificate">
-                Salesforce Development
+
+                <img src="Microsoft365CertifiedFundamentals.png"
+                    alt="Microsoft 365 Fundamentals">
+
+                <h3>Microsoft 365 Certified: Fundamentals</h3>
+
+                <br>
+
+                <p><strong>Issued By:</strong> Microsoft</p>
+
+                <p><strong>Issued:</strong> May 31, 2023</p>
+
+                <br>
+
+                <p>
+                    Gained knowledge of Microsoft 365 services,
+                    cloud concepts, productivity, and security solutions.
+                </p>
+
+            </div>
+
+            <!-- SQL -->
+
+            <div class="certificate">
+
+                <img src="HandsOnIntroductionSQL.png"
+                    alt="SQL Certification">
+
+                <h3>Hands-On Introduction: SQL</h3>
+
+                <br>
+
+                <p><strong>Issued By:</strong> LinkedIn Learning</p>
+
+                <p><strong>Completed:</strong> December 12, 2022</p>
+
+                <br>
+
+                <p>
+                    Learned SQL queries, joins, subqueries,
+                    relational databases, and data analysis concepts.
+                </p>
+
+            </div>
+
+            <!-- Python -->
+
+            <div class="certificate">
+
+                <img src="PythonProgrammingFundamentals(PPF)&PersonalityDevelopment.png"
+                    alt="Python Programming Fundamentals">
+
+                <h3>
+                    Python Programming Fundamentals & Personality Development
+                </h3>
+
+                <br>
+
+                <p>
+                    Completed Python programming fundamentals training
+                    conducted in association with IIT Kharagpur.
+                </p>
+
+            </div>
+
+            <!-- Web Development -->
+
+            <div class="certificate">
+
+                <img src="WebDevelopment.png"
+                    alt="Web Development Certification">
+
+                <h3>Web Development</h3>
+
+                <br>
+
+                <p>
+                    Successfully completed web development training
+                    focused on HTML, CSS, JavaScript, and frontend design.
+                </p>
+
             </div>
 
         </div>
 
     </section>
+
+
 
     <!-- CONTACT -->
 
@@ -569,50 +1171,138 @@
 
         <div class="contact-container">
 
-            <div class="contact-form">
+            <!-- CONTACT FORM -->
 
-                <input type="text" placeholder="Your Name">
+            <form
+                action="https://formsubmit.co/chyprakash2002@gmail.com"
+                method="POST"
+                class="contact-form">
 
-                <input type="email" placeholder="Your Email">
+                <!-- Disable Captcha -->
 
-                <textarea rows="6"
-                placeholder="Your Message"></textarea>
+                <input type="hidden"
+                    name="_captcha"
+                    value="false">
 
-                <button class="btn">Send Message</button>
+                <!-- Email Subject -->
 
-            </div>
+                <input type="hidden"
+                    name="_subject"
+                    value="New Portfolio Message">
 
-            <div>
+                <!-- Redirect After Submit -->
+
+                <input type="hidden"
+                    name="_next"
+                    value="https://prakashchaudharyportfoliowebsite.netlify.app/">
+
+                <input type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required>
+
+                <input type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required>
+
+                <textarea
+                    name="message"
+                    rows="6"
+                    placeholder="Write your message..."
+                    required></textarea>
+
+                <button type="submit"
+                        class="btn">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+            <!-- SOCIAL LINKS -->
+
+            <div class="contact-info">
 
                 <h3>Connect With Me</h3>
 
                 <br>
 
+                <p>
+                    Feel free to connect with me for
+                    AI/ML, Data Science, Analytics,
+                    and collaboration opportunities.
+                </p>
+
+                <br><br>
+
                 <div class="social-icons">
 
-                    <a href="#">
+                    <!-- LINKEDIN -->
+
+                    <a href="https://www.linkedin.com/in/prakash-chaudhary/"
+                    target="_blank">
+
                         <i class="fab fa-linkedin"></i>
+
                     </a>
 
-                    <a href="#">
+                    <!-- GITHUB -->
+
+                    <a href="https://github.com/prakashchaudhary12"
+                    target="_blank">
+
                         <i class="fab fa-github"></i>
+
                     </a>
 
-                    <a href="#">
+                    <!-- KAGGLE -->
+
+                    <a href="https://www.kaggle.com/prakashchaudhary12"
+                    target="_blank">
+
                         <i class="fab fa-kaggle"></i>
+
                     </a>
 
-                    <a href="#">
+                    <!-- EMAIL -->
+
+                    <a href="mailto:chyprakash2002@gmail.com">
+
                         <i class="fas fa-envelope"></i>
+
                     </a>
 
                 </div>
+
+                <br><br>
+
+                <p>
+                    📧 chyprakash2002@gmail.com
+                </p>
+
+                <p>
+                    📱 +91 9709171153
+                </p>
+
+                <p>
+                    📍 Pune, India
+                </p>
 
             </div>
 
         </div>
 
     </section>
+
+
+
+    
+
+
+
+   
 
     <!-- FOOTER -->
 
@@ -625,6 +1315,24 @@
 
     </footer>
 
+
+
+    <script>
+
+    window.addEventListener("scroll", function(){
+
+        const header = document.querySelector("header");
+
+        header.classList.toggle(
+            "sticky",
+            window.scrollY > 0
+        );
+
+    });
+
+    </script>
+
+
 </body>
 </html>
-```
+
